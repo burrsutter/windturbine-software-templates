@@ -111,7 +111,7 @@ public class GameResource {
     @Consumes(MediaType.APPLICATION_JSON)
     @RolesAllowed("admin")
     public void sendGameEvent(GameEvent gameEvent) {
-        System.out.println("sending: " + gameEvent);
+        System.out.println("sending events: " + gameEvent);
         gameEventsOut.send(gameEvent);
     }
 
